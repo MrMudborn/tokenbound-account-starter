@@ -1,26 +1,29 @@
-import { Account } from '../components/Account'
-import { Balance } from '../components/Balance'
-import { BlockNumber } from '../components/BlockNumber'
-import { ConnectButton } from '../components/ConnectButton'
-import { Connected } from '../components/Connected'
-import { NetworkSwitcher } from '../components/NetworkSwitcher'
-import { ReadContract } from '../components/ReadContract'
-import { ReadContracts } from '../components/ReadContracts'
-import { ReadContractsInfinite } from '../components/ReadContractsInfinite'
-import { SendTransaction } from '../components/SendTransaction'
-import { SendTransactionPrepared } from '../components/SendTransactionPrepared'
-import { SignMessage } from '../components/SignMessage'
-import { SignTypedData } from '../components/SignTypedData'
-import { Token } from '../components/Token'
-import { WatchContractEvents } from '../components/WatchContractEvents'
-import { WatchPendingTransactions } from '../components/WatchPendingTransactions'
-import { WriteContract } from '../components/WriteContract'
-import { WriteContractPrepared } from '../components/WriteContractPrepared'
+import { Account } from "../components/Account";
+import { Balance } from "../components/Balance";
+import { BlockNumber } from "../components/BlockNumber";
+import { ConnectButton } from "../components/ConnectButton";
+import { Connected } from "../components/Connected";
+import { NetworkSwitcher } from "../components/NetworkSwitcher";
+import { ReadContract } from "../components/ReadContract";
+import { ReadContracts } from "../components/ReadContracts";
+import { ReadContractsInfinite } from "../components/ReadContractsInfinite";
+import { SendTransaction } from "../components/SendTransaction";
+import { SendTransactionPrepared } from "../components/SendTransactionPrepared";
+import { SignMessage } from "../components/SignMessage";
+import { SignTypedData } from "../components/SignTypedData";
+import { Token } from "../components/Token";
+import { WatchContractEvents } from "../components/WatchContractEvents";
+import { WatchPendingTransactions } from "../components/WatchPendingTransactions";
+import { WriteContract } from "../components/WriteContract";
+import { WriteContractPrepared } from "../components/WriteContractPrepared";
+import { Nfts } from "../components/Nfts";
+import { Tokenbound } from "../components/tokenbound";
 
 export function Page() {
   return (
     <>
       <h1>wagmi + RainbowKit + Next.js</h1>
+      <h2>Tokenbound starter</h2>
 
       <ConnectButton />
 
@@ -38,7 +41,17 @@ export function Page() {
         <Balance />
         <br />
         <hr />
-        <h2>Block Number</h2>
+        <h2>NFTs</h2>
+        <Nfts />
+        <br />
+        <hr />
+        <h2>TBA</h2>
+        <Tokenbound />
+        <br />
+        <hr />
+        {/* <br />
+        <hr /> */}
+        {/* <h2>Block Number</h2>
         <BlockNumber />
         <br />
         <hr />
@@ -87,10 +100,10 @@ export function Page() {
         <br />
         <hr />
         <h2>Write Contract (Prepared)</h2>
-        <WriteContractPrepared />
+        <WriteContractPrepared /> */}
       </Connected>
     </>
-  )
+  );
 }
 
-export default Page
+export default Page;
