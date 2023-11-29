@@ -49,6 +49,9 @@ export function Page() {
         <Tokenbound />
         <br />
         <hr />
+        <h2>Sign Message</h2>
+        <SignMessage />
+        <br />
         {/* <br />
         <hr /> */}
         {/* <h2>Block Number</h2>
